@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Stories for kids</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+    <string name="play">پخش</string>
+    <string name="previous">قبلی</string>
+    <string name="next">بعدی</string>
+    <string name="title_activity_test">TestActivity</string>
+    <string name="games">بازی ها</string>
+    <string name="all">همه</string>
+    <string name="open">باز</string>
+    <string name="lock">قفل</string>
+    <string name="stage2_intro_desctiption">توضیحات: داستان پس از مدتی قطع خواهد شد…</string>
+    <string name="stage2">مرحله دو</string>
+    <string name="main_act_start_count">ستاره ها: </string>
+    <string name="check_answer">بررسی</string>
+    <string name="title_activity_option_lists">OptionListsActivity</string>
+    <string name="btn_timed_questions">سوالات زمان دار</string>
+    <string name="btn_practice">تمرین</string>
+    <string name="btn_random_stop">توقف تصادفی</string>
+    <string name="btn_questions">سوالات</string>
+</resources>

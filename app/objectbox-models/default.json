@@ -1,0 +1,177 @@
+{
+  "_note1": "KEEP THIS FILE! Check it into a version control system (VCS) like git.",
+  "_note2": "ObjectBox manages crucial IDs for your object model. See docs for details.",
+  "_note3": "If you have VCS merge conflicts, you must resolve them according to ObjectBox docs.",
+  "entities": [
+    {
+      "id": "1:4193031998495277278",
+      "lastPropertyId": "3:6336609925649147637",
+      "name": "User",
+      "properties": [
+        {
+          "id": "1:4727179239735861757",
+          "name": "id"
+        },
+        {
+          "id": "2:3751869734653205355",
+          "name": "name"
+        },
+        {
+          "id": "3:6336609925649147637",
+          "name": "starsCount"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "2:2988663305074495137",
+      "lastPropertyId": "9:7262411204112392965",
+      "name": "Story",
+      "properties": [
+        {
+          "id": "1:2991010362396681989",
+          "name": "id"
+        },
+        {
+          "id": "2:2142237922926914160",
+          "name": "name"
+        },
+        {
+          "id": "3:8215421249868714886",
+          "name": "parts"
+        },
+        {
+          "id": "4:4615607294287922165",
+          "name": "questionsCount"
+        },
+        {
+          "id": "5:8249136748583803255",
+          "name": "difficulty"
+        },
+        {
+          "id": "7:8652903149296754421",
+          "name": "stopageTimes"
+        },
+        {
+          "id": "8:9141615443445182738",
+          "name": "stage"
+        },
+        {
+          "id": "9:7262411204112392965",
+          "name": "isLocked"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "3:3155569270433405716",
+      "lastPropertyId": "6:2088130889120221921",
+      "name": "StoryStep",
+      "properties": [
+        {
+          "id": "1:3689692681910629729",
+          "name": "id"
+        },
+        {
+          "id": "2:6183249552182988429",
+          "name": "position"
+        },
+        {
+          "id": "3:5004990868156327051",
+          "name": "media"
+        },
+        {
+          "id": "4:6720374102758845694",
+          "name": "voice"
+        },
+        {
+          "id": "5:1043976076355853181",
+          "indexId": "1:5016152328208221252",
+          "name": "storyId"
+        },
+        {
+          "id": "6:2088130889120221921",
+          "name": "stopageTimes"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "4:2812378529412724935",
+      "lastPropertyId": "7:3939612364317680036",
+      "name": "Question",
+      "properties": [
+        {
+          "id": "1:7913704524314208578",
+          "name": "id"
+        },
+        {
+          "id": "2:6882761192800606353",
+          "indexId": "2:5268276058550962245",
+          "name": "storyId"
+        },
+        {
+          "id": "3:5255350228682079933",
+          "name": "title"
+        },
+        {
+          "id": "4:7826247418197595817",
+          "name": "options"
+        },
+        {
+          "id": "6:6491649074396404889",
+          "name": "voice"
+        },
+        {
+          "id": "7:3939612364317680036",
+          "name": "currectOption"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "5:6169956685347463127",
+      "lastPropertyId": "7:4859742319156104956",
+      "name": "AlefbaPic",
+      "properties": [
+        {
+          "id": "1:3766394721381392111",
+          "name": "id"
+        },
+        {
+          "id": "3:1668229729811032694",
+          "name": "media"
+        },
+        {
+          "id": "4:6260785751762841233",
+          "name": "currectLetters"
+        },
+        {
+          "id": "6:6774875617486965308",
+          "name": "isDone"
+        },
+        {
+          "id": "7:4859742319156104956",
+          "name": "wrongLetters"
+        }
+      ],
+      "relations": []
+    }
+  ],
+  "lastEntityId": "5:6169956685347463127",
+  "lastIndexId": "2:5268276058550962245",
+  "lastRelationId": "0:0",
+  "lastSequenceId": "0:0",
+  "modelVersion": 4,
+  "modelVersionParserMinimum": 4,
+  "retiredEntityUids": [],
+  "retiredIndexUids": [],
+  "retiredPropertyUids": [
+    1774284638037878589,
+    8300205604692452703,
+    347033892195566370,
+    4457132467861671372
+  ],
+  "retiredRelationUids": [],
+  "version": 1
+}

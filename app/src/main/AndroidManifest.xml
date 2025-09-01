@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="ir.shalior.stroiesforkids">
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:name=".StoriesForKidsApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".games.alefba.activities.game.AlefbaGameActivity_" />
+        <activity android:name=".games.alefba.activities.main.AlefbaMainActivity_" />
+        <activity android:name=".activities.OptionListsActivity_" />
+        <activity android:name=".activities.storiesindex.StoriesIndex_" />
+        <activity android:name=".activities.firstrun.FirstRunActivity_" />
+        <activity android:name=".activities.games.GamesActivity_" />
+        <activity android:name=".activities.questions.QuestionsActivity_" />
+        <activity android:name=".activities.stagetwo.StoriesStageTwoActivity_" />
+        <activity android:name=".games.tapouniom.GameTapActivity" />
+        <activity
+            android:name=".TestActivity_"
+            android:label="@string/title_activity_test"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activities.story.StoryActivity_" />
+        <activity
+            android:name=".activities.main.MainActivity_"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ir.shalior.gamespanel.CheckableLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:minHeight="?android:listPreferredItemHeight"
+    android:orientation="horizontal"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp">
+
+    <ImageView
+        android:id="@+id/appImage"
+        android:layout_width="?android:listPreferredItemHeight"
+        android:layout_height="?android:listPreferredItemHeight"
+        android:padding="8dp"
+        android:src="@mipmap/ic_launcher" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_gravity="end|center"
+        android:duplicateParentState="true"
+
+        android:src="?android:listChoiceIndicatorSingle" />
+    <!--        <TextView
+        android:id="@+id/Apk_Package_Name"
+        android:layout_below="@id/Apk_Name"
+        android:layout_toEndOf="@id/imageview"
+        android:layout_toRightOf="@id/imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:textColor="#795548"-->
+
+    <TextView
+        android:id="@+id/Apk_Name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_toEndOf="@id/appImage"
+        android:layout_toRightOf="@id/appImage"
+        android:layout_weight="1"
+        android:duplicateParentState="true"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/hideable_text_color" />
+
+</ir.shalior.gamespanel.CheckableLinearLayout>

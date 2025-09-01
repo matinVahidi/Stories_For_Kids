@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/second_45"
+        android:title="45 ثانیه | 5 ستاره" />
+
+    <item
+        android:id="@+id/second_60"
+        android:title="60 ثانیه | 4 ستاره" />
+
+    <item
+        android:id="@+id/second_75"
+        android:title="75 ثانیه | 3 ستاره" />
+
+</menu>
