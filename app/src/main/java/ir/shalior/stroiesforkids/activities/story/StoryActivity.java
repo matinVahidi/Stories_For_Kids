@@ -1,6 +1,7 @@
 package ir.shalior.stroiesforkids.activities.story;
 
 import android.content.Context;
+import android.content.Intent;
 import android.media.MediaPlayer;
 import android.util.Log;
 import android.view.View;
@@ -28,8 +29,8 @@ import java.util.List;
 
 import io.github.inflationx.viewpump.ViewPumpContextWrapper;
 import ir.shalior.stroiesforkids.R;
-import ir.shalior.stroiesforkids.activities.main.MainActivity_;
-import ir.shalior.stroiesforkids.activities.questions.QuestionsActivity_;
+import ir.shalior.stroiesforkids.activities.main.MainActivity;
+import ir.shalior.stroiesforkids.activities.questions.QuestionsActivity;
 import ir.shalior.stroiesforkids.activities.story.dialogs.StageTwoIntroDialog;
 import ir.shalior.stroiesforkids.activities.story.dialogs.StageTwoPausedDialog;
 import ir.shalior.stroiesforkids.customviews.StoriesPager;
@@ -273,18 +274,24 @@ public class StoryActivity extends FragmentActivity {
     }
 
     public void dialogNexStageButtonClicked() {
-        QuestionsActivity_.intent(this).extra("storyId", storyId).start();
+        Intent intent = new Intent(this, QuestionsActivity.class);
+        intent.putExtra("storyId", storyId);
+        startActivity(intent);
     }
 
     public void nextStageClicked() {
-        StoryActivity_.intent(this).extra("storyId", storyId).extra("stageTwo", true).start();
+        Intent intent = new Intent(this, StoryActivity.class);
+        intent.putExtra("storyId", storyId);
+        intent.putExtra("stageTwo", true);
+        startActivity(intent);
         Log.d(TAG, "nextStageClicked: " + storyId + "   " + isStageTwo);
     }
 
 
     @Override
     public void onBackPressed() {
-        MainActivity_.intent(this).start();
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
     }
 
     @Override

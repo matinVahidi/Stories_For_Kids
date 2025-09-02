@@ -14,7 +14,7 @@ import java.util.Random;
 
 import io.objectbox.Box;
 import ir.shalior.stroiesforkids.activities.questions.fragments.QuestionFragment;
-import ir.shalior.stroiesforkids.activities.story.fragments.steps.StoryLastStepFragment_;
+import ir.shalior.stroiesforkids.activities.story.fragments.steps.StoryLastStepFragment;
 import ir.shalior.stroiesforkids.activities.story.fragments.steps.StoryStepFragment;
 import ir.shalior.stroiesforkids.model.myobjectbox.ObjectBox;
 import ir.shalior.stroiesforkids.util.Helpers;
@@ -120,11 +120,10 @@ public class StoryBoxer {
 
     public List<Fragment> stepsToFragments(List<StoryStep> steps) {
         List<Fragment> fragments = new ArrayList<>();
-        for (StoryStep step : steps
-        ) {
+        for (StoryStep step : steps) {
             fragments.add(StoryStepFragment.newInstance(step));
         }
-        fragments.add(StoryLastStepFragment_.builder().build());
+        fragments.add(StoryLastStepFragment.newInstance());
         //reversing the list for viewPager rtl
         //Collections.reverse(fragments);
         return fragments;

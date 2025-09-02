@@ -19,7 +19,8 @@ import java.util.List;
 
 import io.github.inflationx.viewpump.ViewPumpContextWrapper;
 import ir.shalior.stroiesforkids.R;
-import ir.shalior.stroiesforkids.games.alefba.activities.game.AlefbaGameActivity_;
+import android.content.Intent;
+import ir.shalior.stroiesforkids.games.alefba.activities.game.AlefbaGameActivity;
 import ir.shalior.stroiesforkids.model.alefbagame.AlefbaBoxer;
 import ir.shalior.stroiesforkids.model.alefbagame.AlefbaPic;
 
@@ -37,7 +38,8 @@ public class AlefbaMainActivity extends AppCompatActivity {
 
     @Click(R.id.btnStartAlefba)
     public void runAlefbaGame() {
-        AlefbaGameActivity_.intent(this).start();
+        Intent intent = new Intent(this, AlefbaGameActivity.class);
+        startActivity(intent);
     }
 
     @AfterViews
@@ -51,7 +53,9 @@ public class AlefbaMainActivity extends AppCompatActivity {
             btn.setTextSize(20f);
             btn.setPadding(8, 8, 8, 8);
             btn.setOnClickListener(v -> {
-                AlefbaGameActivity_.intent(this).extra("picId", pic.id).start();
+                Intent intent = new Intent(this, AlefbaGameActivity.class);
+                intent.putExtra("picId", pic.id);
+                startActivity(intent);
             });
             tableLayout.addView(btn);
             btnList.add(btn);

@@ -15,14 +15,14 @@ import org.androidannotations.annotations.Click;
 import org.androidannotations.annotations.EFragment;
 
 import ir.shalior.stroiesforkids.R;
-import ir.shalior.stroiesforkids.activities.story.StoryActivity_;
+import ir.shalior.stroiesforkids.activities.story.StoryActivity;
 import ir.shalior.stroiesforkids.model.StoryStep;
 
 @EFragment
 public class StoryLastStepFragment extends Fragment {
 
     public StoryStep step;
-    StoryActivity_ storyActivity;
+    StoryActivity storyActivity;
     private long id;
     private long storyId;
     private String media;
@@ -43,7 +43,7 @@ public class StoryLastStepFragment extends Fragment {
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        storyActivity = (StoryActivity_) getContext();
+        storyActivity = (StoryActivity) getContext();
     }
 
     @Nullable

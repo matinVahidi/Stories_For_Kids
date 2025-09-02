@@ -7,7 +7,7 @@ import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.EActivity;
 
 import ir.shalior.stroiesforkids.R;
-import ir.shalior.stroiesforkids.activities.stagetwo.story.StoryFragment_;
+import ir.shalior.stroiesforkids.activities.stagetwo.story.StoryFragment;
 
 @EActivity(R.layout.activity_stories_stage_two)
 public class StoriesStageTwoActivity extends FragmentActivity {
@@ -17,7 +17,7 @@ public class StoriesStageTwoActivity extends FragmentActivity {
     public void afterView() {
 
         //default fragment
-        loadFragment(new StoryFragment_());
+        loadFragment(new StoryFragment());
     }
 
     public boolean loadFragment(Fragment fragment) {

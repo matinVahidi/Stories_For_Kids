@@ -27,6 +27,11 @@ android {
         sourceCompatibility 1.8
         targetCompatibility 1.8
     }
+    javaCompileOptions {
+        annotationProcessorOptions {
+            arguments = [androidManifestFile: "$projectDir/src/main/AndroidManifest.xml"]
+        }
+    }
     android.defaultConfig.vectorDrawables.useSupportLibrary = true
 }
 def AAVersion = '4.6.0'

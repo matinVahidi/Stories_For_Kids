@@ -1,5 +1,6 @@
 package ir.shalior.stroiesforkids;
 
+import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.util.Log;
@@ -78,7 +79,9 @@ public class TestActivity extends AppCompatActivity {
 
     @Click(R.id.button)
     public void clickV() {
-        TestActivity_.intent(this).extra("test", "testtttt").start();
+        Intent intent = new Intent(this, TestActivity.class);
+        intent.putExtra("test", "testtttt");
+        startActivity(intent);
     }
 
     @Click(R.id.button2)

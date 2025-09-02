@@ -14,17 +14,17 @@ import androidx.fragment.app.DialogFragment;
 import com.bumptech.glide.Glide;
 
 import ir.shalior.stroiesforkids.R;
-import ir.shalior.stroiesforkids.activities.story.StoryActivity_;
+import ir.shalior.stroiesforkids.activities.story.StoryActivity;
 
 public class StageTwoPausedDialog extends DialogFragment {
 
 
-    StoryActivity_ storyActivity;
+    StoryActivity storyActivity;
 
     @NonNull
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
-        storyActivity = (StoryActivity_) getActivity();
+        storyActivity = (StoryActivity) getActivity();
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
 
         LayoutInflater inflater = getActivity().getLayoutInflater();

@@ -25,7 +25,7 @@ import java.util.List;
 
 import ir.shalior.stroiesforkids.R;
 import ir.shalior.stroiesforkids.activities.questions.AnswerEvent;
-import ir.shalior.stroiesforkids.activities.questions.QuestionsActivity_;
+import ir.shalior.stroiesforkids.activities.questions.QuestionsActivity;
 import ir.shalior.stroiesforkids.model.Question;
 import ir.shalior.stroiesforkids.util.Helpers;
 
@@ -41,7 +41,7 @@ public class QuestionFragment extends Fragment {
     private TextView txtQuestionNumber;
     private MaterialButton btnAnswerCheck;
     private AnswerEvent answer;
-    private QuestionsActivity_ questionsActivity;
+    private QuestionsActivity questionsActivity;
     private boolean isChecked = false;
     private int currectColor = Color.parseColor("#43a047");
     private int falseColor = Color.parseColor("#e53935");
@@ -71,7 +71,7 @@ public class QuestionFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         //Log.d(TAG, "onCreateView: fragment created" + question.id);
         View rootView = inflater.inflate(R.layout.fragment_question, container, false);
-        questionsActivity = (QuestionsActivity_) getContext();
+        questionsActivity = (QuestionsActivity) getContext();
         answer = new AnswerEvent(question.id, -1, false);
 
         //Views

@@ -1,6 +1,7 @@
 package ir.shalior.stroiesforkids.activities.main;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,7 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.List;
 
 import ir.shalior.stroiesforkids.R;
-import ir.shalior.stroiesforkids.activities.OptionListsActivity_;
+import ir.shalior.stroiesforkids.activities.OptionListsActivity;
 import ir.shalior.stroiesforkids.model.Story;
 
 import static ir.shalior.stroiesforkids.model.StoryBoxer.STORY_IS_LOCKED;
@@ -58,7 +59,9 @@ class StoriesAdapter extends RecyclerView.Adapter<StoriesAdapter.MyViewHolder> {
                 @Override
                 public void onClick(View view) {
                     //anOtherWAt:
-                    OptionListsActivity_.intent(mContex).extra("storyId", mDataset.get(position).id).start();
+                    Intent intent = new Intent(mContex, OptionListsActivity.class);
+                    intent.putExtra("storyId", mDataset.get(position).id);
+                    mContex.startActivity(intent);
                 }
             });
         }

@@ -131,7 +131,7 @@
     },
     {
       "id": "5:6169956685347463127",
-      "lastPropertyId": "5:4457132467861671372",
+      "lastPropertyId": "7:4859742319156104956",
       "name": "AlefbaPic",
       "properties": [
         {
@@ -147,8 +147,12 @@
           "name": "currectLetters"
         },
         {
-          "id": "5:4457132467861671372",
-          "name": "randomLetter"
+          "id": "6:6774875617486965308",
+          "name": "isDone"
+        },
+        {
+          "id": "7:4859742319156104956",
+          "name": "wrongLetters"
         }
       ],
       "relations": []
@@ -165,7 +169,8 @@
   "retiredPropertyUids": [
     1774284638037878589,
     8300205604692452703,
-    347033892195566370
+    347033892195566370,
+    4457132467861671372
   ],
   "retiredRelationUids": [],
   "version": 1

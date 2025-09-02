@@ -18,9 +18,9 @@ import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.azoft.carousellayoutmanager.CarouselLayoutManager;
-import com.azoft.carousellayoutmanager.CarouselZoomPostLayoutListener;
-import com.azoft.carousellayoutmanager.CenterScrollListener;
+import com.mig35.carousellayoutmanager.CarouselLayoutManager;
+import com.mig35.carousellayoutmanager.CarouselZoomPostLayoutListener;
+import com.mig35.carousellayoutmanager.CenterScrollListener;
 import com.google.android.material.navigation.NavigationView;
 
 import org.androidannotations.annotations.AfterInject;
@@ -35,8 +35,8 @@ import java.util.List;
 import io.github.inflationx.viewpump.ViewPumpContextWrapper;
 import io.objectbox.Box;
 import ir.shalior.stroiesforkids.R;
-import ir.shalior.stroiesforkids.activities.games.GamesActivity_;
-import ir.shalior.stroiesforkids.activities.questions.QuestionsActivity_;
+import ir.shalior.stroiesforkids.activities.games.GamesActivity;
+import ir.shalior.stroiesforkids.activities.questions.QuestionsActivity;
 import ir.shalior.stroiesforkids.activities.story.StoryActivity;
 import ir.shalior.stroiesforkids.model.Story;
 import ir.shalior.stroiesforkids.model.StoryBoxer;
@@ -125,7 +125,8 @@ String TAG = "dd123";
 
     @Click(R.id.btnToGamesActivity)
     public void toGamesActivityClicked() {
-        GamesActivity_.intent(this).start();
+        Intent intent = new Intent(this, GamesActivity.class);
+        startActivity(intent);
     }
 
     @Override
@@ -226,7 +227,8 @@ String TAG = "dd123";
         if (id == R.id.action_settings) {
             Log.d(TAG, "start act clicked ");
             //TestActivity_.intent(this).start();
-            QuestionsActivity_.intent(this).start();
+            Intent intent = new Intent(this, QuestionsActivity.class);
+            startActivity(intent);
             return true;
         }
 

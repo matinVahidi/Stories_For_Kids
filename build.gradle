@@ -6,6 +6,9 @@ buildscript {
         maven {
             url 'https://maven.myket.ir'
         }
+        maven{
+            url "https://en-mirror.ir"
+        }
         google()
         mavenCentral()
     }
@@ -21,6 +24,9 @@ allprojects {
     repositories {
         maven {
             url 'https://maven.myket.ir'
+        }
+        maven{
+            url "https://en-mirror.ir"
         }
         google()
         mavenCentral()

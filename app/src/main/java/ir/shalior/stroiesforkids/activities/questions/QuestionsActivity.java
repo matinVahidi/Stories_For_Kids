@@ -1,6 +1,7 @@
 package ir.shalior.stroiesforkids.activities.questions;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.CountDownTimer;
 import android.util.Log;
 import android.view.View;
@@ -27,7 +28,7 @@ import java.util.List;
 
 import io.github.inflationx.viewpump.ViewPumpContextWrapper;
 import ir.shalior.stroiesforkids.R;
-import ir.shalior.stroiesforkids.activities.main.MainActivity_;
+import ir.shalior.stroiesforkids.activities.main.MainActivity;
 import ir.shalior.stroiesforkids.activities.questions.dialogs.StarsDialog;
 import ir.shalior.stroiesforkids.customviews.StoriesPager;
 import ir.shalior.stroiesforkids.model.Story;
@@ -184,7 +185,8 @@ public class QuestionsActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        MainActivity_.intent(this).start();
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
     }
 
     @Override

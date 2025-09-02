@@ -28,6 +28,7 @@ public class GamesActivity extends AppCompatActivity {
     private SharedPreferences customPrefrences;
     private AppsSelectDialog appsSelectDialog;
     private ApkInfoExtractor appsUtil;
+    private String mCustomGame;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -45,7 +46,7 @@ public class GamesActivity extends AppCompatActivity {
         appsUtil = new ApkInfoExtractor(this);
 
         // Bind data and listeners (replaces @ViewById and @AfterViews)
-        binding.btnRunChosenGame.setImageDrawable(appsUtil.getAppIconByPackageName(getAppPackage()));
+        binding.btnCustomGameStart.setImageDrawable(appsUtil.getAppIconByPackageName(getAppPackage()));
         binding.txtStars.setText(userBoxer.getStartsCount() + "");
 
         // Set click listeners (replaces @Click annotations)
@@ -68,7 +69,7 @@ public class GamesActivity extends AppCompatActivity {
                 return;
             }
             customPrefrences.edit().putString("package", pachageSelected).commit();
-            binding.btnRunChosenGame.setImageDrawable(appsUtil.getAppIconByPackageName(pachageSelected));
+            binding.btnCustomGameStart.setImageDrawable(appsUtil.getAppIconByPackageName(pachageSelected));
         });
     }
 
