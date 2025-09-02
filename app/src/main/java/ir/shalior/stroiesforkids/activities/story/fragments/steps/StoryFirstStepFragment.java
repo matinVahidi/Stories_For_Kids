@@ -1,4 +1,4 @@
-package ir.shalior.stroiesforkids.activities.main.story.fragments.steps;
+package ir.shalior.stroiesforkids.activities.story.fragments.steps;
 
 public class StoryFirstStepFragment {
 }

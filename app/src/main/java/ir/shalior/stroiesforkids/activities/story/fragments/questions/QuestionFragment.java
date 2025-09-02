@@ -1,4 +1,4 @@
-package ir.shalior.stroiesforkids.activities.main.story.fragments.questions;
+package ir.shalior.stroiesforkids.activities.story.fragments.questions;
 
 public class QuestionFragment {
 }

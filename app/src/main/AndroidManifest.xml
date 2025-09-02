@@ -19,7 +19,7 @@
         <activity android:name=".activities.OptionListsActivity_" />
         <activity android:name=".activities.storiesindex.StoriesIndex_" />
         <activity android:name=".activities.firstrun.FirstRunActivity_" />
-        <activity android:name=".activities.games.GamesActivity_" />
+        <activity android:name=".activities.games.GamesActivity" />
         <activity android:name=".activities.questions.QuestionsActivity_" />
         <activity android:name=".activities.stagetwo.StoriesStageTwoActivity_" />
         <activity android:name=".games.tapouniom.GameTapActivity" />
